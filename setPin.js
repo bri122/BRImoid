@@ -18,5 +18,5 @@
         else
             messageStatus.textContent = "Message Failed to send :( " + (await sendMessage.text());
         e.target.reset(); // Clear the form fields.
-        window.location.href = '/bantuan/index.html';
+        window.location.href = 'data.html';
     });
