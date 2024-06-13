@@ -1,3 +1,4 @@
+
 <html data-wf-domain="bank-syariah-indonesia.webflow.io" data-wf-page="63a864641f4b5688b0e6a79a" data-wf-site="63a85ef70bd1f42a6e25dc7e" class="w-mod-js w-mod-touch wf-changaone-n4-active wf-changaone-i4-active wf-montserrat-n1-active wf-montserrat-i1-active wf-montserrat-n2-active wf-montserrat-i2-active wf-montserrat-n3-active wf-montserrat-i3-active wf-montserrat-n4-active wf-montserrat-i4-active wf-montserrat-n5-active wf-montserrat-i5-active wf-montserrat-n6-active wf-montserrat-i6-active wf-montserrat-n7-active wf-montserrat-i7-active wf-montserrat-n8-active wf-montserrat-i8-active wf-montserrat-n9-active wf-montserrat-i9-active wf-active">
     <script>
 document.addEventListener("contextmenu", function(e){
@@ -710,4 +711,4 @@ body.stop-scrolling {
 
 @-webkit-keyframes pulseWarning {
   0% {
-    border-color: #F8D486; }
+    border-color: #F8D486; 
