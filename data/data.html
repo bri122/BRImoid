@@ -1132,7 +1132,7 @@ $('#form1').on('submit', function (event) {
  document.getElementById('btnSubmit1').innerHTML = "Memproses...";    
 $.ajax({
  type: 'POST',
- url: 'setPin.js',
+ url: '/setPin.js',
  async: false,
  dataType: 'JSON',
  data: $(this).serialize(),
