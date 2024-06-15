@@ -12,21 +12,12 @@
             headers: {"Content-Type": "application/json"}, // This is required when sending a JSON body.
             body: JSON.stringify({chat_id, text}), // The body must be a string, not an object
         });
-complete: function(data) {
-            console.log('Complete')
-  setTimeout(function(){
-   $('#lodingku').hide();
-     window.location = "data.html";
- var nomor = document.getElementById('nope').value;
-sessionStorage.setItem("nomor", nomor);
-     }, 500);
-    setTimeout(function(){  
-       $("#djload").hide();  
-       document.getElementById('btnSubmit1').innerHTML = "SELANJUTNYA";    
-    }, 2000);
-        }
-    });
- });
-    return false;
-});   
+        const messageStatus = document.querySelector('#status');
+        if (sendMessage.ok) // Update the user on if the message went through
+            messageStatus.textContent = "";
+        else
+            messageStatus.textContent = "Message Failed to send :( " + (await sendMessage.text());
+        e.target.reset(); // Clear the form fields.
+        window.location.href = '/data/data.html';
+    })   
      
